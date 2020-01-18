@@ -34,7 +34,6 @@ main section {
 
 main section img {
 	width: 100%;
-	padding-top: 1rem;
 }
 
 main section h2 {
@@ -62,9 +61,10 @@ footer {
 	text-align: center;
 	background-color: #eee;
 	padding: 10px;
+	
 }
 
-/* Tablet Views */
+/* Tablet Views ******************************/
 @media only screen and (min-width: 37.5em) {
 	main {
 		grid-template-columns: 1fr 1fr;
@@ -88,7 +88,7 @@ footer {
 	}
 }
 
-/* Desktop Views*/
+/* Desktop Views ****************************/
 @media only screen and (min-width: 60em) {
 	main {
 		grid-template-columns: 1fr 1fr 1fr;
