@@ -1,0 +1,78 @@
+body {
+    
+}
+
+hr {
+    border-top: 2px dotted #eb28cd;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 960px;
+	margin: 0 auto;
+}
+
+main section {
+    margin: 0.5rem;
+    
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main section h2 {
+    background-color: #002663;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px 15px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main section p {
+    padding-left: 5px;
+}
+
+.section-footer {
+    background-color: #002663;
+    border-radius: 0px 0px 15px 15px;
+    height: 20px;
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	section:nth-child(2) {
+		display: block;
+	}
+
+	section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main picture {
+		display: block;
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	section:nth-child(3) {
+		grid-column: span 1;
+	}
+}
