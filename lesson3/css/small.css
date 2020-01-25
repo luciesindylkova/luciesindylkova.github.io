@@ -92,6 +92,10 @@ main a:visited {
     margin-right: auto;
 }
 
+.textcenter {
+    text-align: center;
+}
+
 .grey {
     background-color: #E6E6E6;
     padding-left: 2px;
