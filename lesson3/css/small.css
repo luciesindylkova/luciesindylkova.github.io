@@ -65,6 +65,18 @@ main {
     margin: 2%;
 }
 
+main a {
+    color: #F22987;
+}
+
+main a:hover {
+    color: #E6E6F0;
+}
+
+main a:visited {
+    color: #010326;
+}
+
 .showLogo {
     width: 150px;
     display:block;
