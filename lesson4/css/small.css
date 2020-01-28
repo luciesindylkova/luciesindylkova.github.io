@@ -1,0 +1,157 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Alata', sans-serif;
+}
+
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+}
+
+#headerwrap {
+    background-color: white;
+}
+
+header img {float: left; margin-left: 0px; margin-right: 10px; width: 50px;}
+
+header h1 {margin: 0; font-size: 1.3rem; color: #010326; font-family: 'Alata', sans-serif;}
+header h2 {margin: 0; font-weight: normal; font-size: 1rem; color: #010326;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #E6E6F0;
+    color: #010326;    
+}
+
+#navwrap {
+    background-color: #E6E6F0;
+}
+
+nav button {
+    background-color: transparent;
+    color: #010326;
+    border: none;
+    margin: .2rem 2%;
+    padding-left: 2%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+
+nav ul li a {
+    display: block;
+    color: #010326;
+    padding: .8rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav ul li.active a {
+    background-color: #010326;
+    color: #E6E6F0;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #F22987;
+    color: #E6E6F0;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    line-height: 1.4em;
+    margin: 2%;
+}
+
+main a {
+    color: #F22987;
+}
+
+main a:hover {
+    color: #E6E6F0;
+}
+
+main a:visited {
+    color: #010326;
+}
+
+.showLogo {
+    width: 150px;
+    display:block;
+    margin-left: auto;  
+    margin-right: auto;  
+}
+
+.center {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.placeholder {
+    background-color: #E6E6F0;
+    color: #010326;
+    padding: 1rem;
+    display: block;
+    margin-bottom: 1%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #E6E6F0;
+    color: #010326;
+    padding: .5rem 2%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 5%;
+}
+
+#footerwrap {
+    background-color: #E6E6F0;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
