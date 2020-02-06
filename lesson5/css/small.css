@@ -86,6 +86,8 @@ nav ul li a:hover {
 }
 
 /*----------- Hero Image --------------*/
+
+
 .herodiv {
     position: relative;
     width: 100%;
@@ -116,6 +118,11 @@ nav ul li a:hover {
 .weatherSummary p {
     margin: 0;
     padding: 0;
+}
+
+.weatherSummary p span {
+    font-weight: bold;
+    color: #F22987;
 }
 
 /*----------- MAIN --------------*/
@@ -168,6 +175,84 @@ main a:visited {
 }
 
 
+/*----------- Forecast --------------*/
+
+main .forecast{
+    display: none;
+}
+
+
+main .forecast .weekdays{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-around;
+    max-width: 50em;
+
+}
+
+main .forecast .weekdays .day{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+
+.forecast .weekdays .day .weekday{
+    margin-top: 1rem;
+}
+
+.forecast .weekdays .day .weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weekdays .day .weather img{
+    width: 50%;
+}
+
+.weekdays .day .weather p{
+    font-size: .8em;
+}
+
+
+/*----------- Article --------------*/
+
+main article img {
+    width: 100%;
+}
+
+/*----------- Contact --------------*/
+main .contact {
+    padding-bottom: 20px;
+}
+
+main .contact p{
+    margin: 0;
+    padding: 0px 0px 20px 0px;
+    font-style: normal;
+}
+
+main .contact h3 {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+main .contact img {
+    display: none;
+}
+
+.socialicons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.socialicons img {
+    max-width: 40px;
+    padding: 5px;
+}
 
 
 /*----------- FOOTER --------------*/

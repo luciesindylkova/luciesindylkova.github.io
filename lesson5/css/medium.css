@@ -44,20 +44,53 @@ main {
     margin: 0px;
 }
 
-.persona {
+/*----------- Forecast--------------*/
+main .forecast{
     display: flex;
-    padding-bottom: 20px;
+    flex-direction: column;
 }
 
-.persona p {
-    padding-left: 20px;
+/*----------- Article--------------*/
+main article img {
+    width: 40%;
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+    float: right;
+
 }
 
-.persona img {
-    width: 200px;
-    border-radius: 50%;
+main article p {
+   
+    text-align: justify;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+/*----------- Contact -------------*/
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main .contact img {
+   display: block;
+    
+    
+    width: 100%;
+    
+    
+}
+
+.contactinfo {
+    padding-left: 1rem;
+}
+
 
 }
+
+
+
+
 /*----------- FOOTER --------------*/
     
 } /* end of media query */
