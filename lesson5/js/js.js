@@ -1,3 +1,5 @@
+
+
 let date = new Date();
 let y = date.getFullYear();
 let m = date.getMonth();
@@ -18,3 +20,14 @@ function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
 
 } 
+
+let day = date.getDay();
+
+
+const announcement = document.querySelector('.announcement');
+if(day == 5){
+    announcement.style.display = 'block';
+} else {
+    announcement.style.display = 'none';
+}
+
