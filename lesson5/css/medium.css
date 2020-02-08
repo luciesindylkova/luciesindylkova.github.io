@@ -72,7 +72,7 @@ main article p {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-main .contact img {
+.map {
    display: block;
     width: 100%;  
 }
