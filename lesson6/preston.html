@@ -68,7 +68,14 @@
 
 <!-- Hero-->        
       <div class="herodiv">
-          <div id="heroImage"><img src="images/cit230_image_1100.jpg" alt="berries covered with frost" sizes="50vw" srcset="images/cit230_image_800.jpg 800w, images/cit230_image_500.jpg 500w, images/cit230_image_200.jpg 200w"></div>
+          <div id="heroImage">
+              <picture class="photoA">
+                  <source media="(max-width: 200px)" srcset="images/cit230_image_200.jpg">
+                  <source media="(max-width: 500px)" srcset="images/cit230_image_500.jpg">
+                  <source media="(max-width: 800px)" srcset="images/cit230_image_800.jpg">
+                  <img src="images/cit230_image_1100.jpg" alt="nature">   
+              </picture>
+
           <div class="weatherSummary"><h2>Weather Summary</h2>
             <p>Currently: <span>Sunny</span></p>
             <p>High: <span><span id="temp">23</span>&deg;F</span></p>
@@ -141,7 +148,7 @@
 <!-- Contact -->
 <h2>Contact</h2>
 <div class="contact">
-    <img class="map" src="images/map_placeholder.png" alt="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.2157501503643!2d14.549980115772836!3d50.1383956176815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bedaa038df597%3A0x1a16c33ca8f3078e!2sStuden%C3%A1%2C%20197%2000%20Praha%2019!5e0!3m2!1sen!2scz!4v1581711571236!5m2!1sen!2scz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     <div class="contactinfo">
         <h3>Address:</h3>
         <p>The Weather Inn<br/>

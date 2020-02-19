@@ -140,6 +140,15 @@ nav ul li a:hover {
     color: #F22987;
 }
 
+picture.photoA {
+    display: block;
+    width: 100%;
+}
+
+main picture.photoA img {
+    width: 100%;
+}
+
 /*----------- MAIN --------------*/
 main {
     padding: 0 2%;
