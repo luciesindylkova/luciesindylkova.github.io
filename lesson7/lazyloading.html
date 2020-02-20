@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Lazy Loading Activity">
+<meta name="author" content="Lucie Sindylkova">
+
+<title>Lazy Loading</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>Lazy Loading Images</h1>
+    <div class="pictures">
+        <picture>
+            <img src="images/placeholder.png" data-src="images/image1.png" alt="fingers in love">
+        </picture>
+        <picture>
+            <img src="images/placeholder.png" data-src="images/image2.png" alt="heart">
+        </picture>
+        <picture>
+            <img src="images/placeholder.png" data-src="images/image3.png" alt="heart">
+        </picture>
+        <picture>
+            <img src="images/placeholder.png" data-src="images/image4.png" alt="heart">
+        </picture>
+        <picture>
+            <img src="images/placeholder.png" data-src="images/image5.png" alt="heart">
+        </picture>
+    </div>
+
+<script src="js.js" defer></script>    
+</body>
+
+</html>
