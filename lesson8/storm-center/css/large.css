@@ -1,0 +1,70 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin: 0 auto;
+    }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+
+/*----------- Gallery --------------*/
+main div.gallery {
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    
+    max-width: 64rem;
+    width: 100%;
+   
+    
+    
+}
+
+main div.gallery figure {
+    background-color: #E6E6F0;
+    color: #010326;
+    width: 100%;
+    position: relative !important;
+    
+
+}
+
+main div.gallery figure div.image-overlay:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    transition: .6s;
+    background: rgb(245,245,238);
+background: linear-gradient(160deg, rgba(245,245,238,0.6) 0%, rgba(255,255,255,0) 50%);
+}
+
+/*main figure div.image-overlay {
+    width: 100%;
+}*/
+main div.gallery figure div.image-overlay {
+   position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+}
+
+/*------- Form --------*/
+form label.sbs {
+    padding: .4rem 0;
+}
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
