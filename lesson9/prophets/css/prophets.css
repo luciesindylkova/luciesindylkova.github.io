@@ -12,7 +12,7 @@ header h1 {
 
 div.cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(90%, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
     grid-gap: 5px;
     
     text-align: center;
