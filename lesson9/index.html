@@ -5,7 +5,7 @@
 <meta name="description" content="Weather site project fot CIT 230">
 <meta name="author" content="Lucie Sindylkova">
 
-<title>Preston | Weather Inn</title>
+<title>Home | Weather Inn</title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -51,8 +51,8 @@
     <nav class="clearfix">
         <button id="menuButton" onclick="toggleMenu()" class="">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li><a href="#">Home</a></li>
-            <li class="active"><a href="preston.html">Preston</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
@@ -64,9 +64,9 @@
     
 <!-- CONTENT -->
     <main>
-        <h1>Preston</h1>
+       
 
-<!-- Hero-->        
+<!-- Hero     
       <div class="herodiv">
           <div id="heroImage">
               <picture class="photoA">
@@ -75,79 +75,47 @@
                   <source media="(max-width: 800px)" srcset="images/cit230_image_800.jpg">
                   <img src="images/cit230_image_1100.jpg" alt="nature">   
               </picture>
-
-          <div class="weatherSummary"><h2>Weather Summary</h2>
-            <p>Currently: <span>Sunny</span></p>
-            <p>High: <span><span id="temp">23</span>&deg;F</span></p>
-            <p>Wind Chill: <span><span id="windChill"></span>&deg;F</span></p>
-            <p>Humidity: <span>37%</span></p>
-            <p>Wind Speed: <span><span id="speed">5</span> mph</span></p>
-          </div>
       </div>
     </div>  
-
-<!-- Forecast -->
-
-<div class="forecast">
-    <h2>Forecast</h2>
-    <div class="weekdays">
-        <div class="day">
-            <div class="weekday">Wed</div>
-            <div class="weather">
-                <img src="images/sunny.jpg" alt="Sun Icon">
-                <p>23°F</p>
-            </div>
-        </div>
-        <div class="day">
-            <div class="weekday">Thu</div>
-            <div class="weather">
-                <img src="images/sunny.jpg" alt="Sun Icon">
-                <p>24°F</p>
-            </div>
-        </div>
-
-        <div class="day">
-            <div class="weekday">Fri</div>
-            <div class="weather">
-                <img src="images/stormy.jpg" alt="Storm Icon">
-                <p>17°F</p>
-            </div>
-        </div>
-
-        <div class="day">
-            <div class="weekday">Sat</div>
-            <div class="weather">
-                <img src="images/stormy.jpg" alt="Storm Icon">
-                <p>20°F</p>
-            </div>
-        </div>
-
-        <div class="day">
-            <div class="weekday">Sun</div>
-            <div class="weather">
-                <img src="images/sunny.jpg" alt="Sun Icon">
-                <p>25°F</p>
-            </div>
-        </div>
-    </div>
-</div>
+-->   
+<!-- Towns -->
+<h2 class="heading">Discover</h2>
+<div class="cards"></div>
 
 <!-- Article -->
-<h2>Latest Article</h2>
-<article class="placeholder">
-    <h3>Best Winter Activities in Preston</h3>
+<h2 class="heading">Blog</h2>
+<article class="mainPageArticle, clearfix2">
+    <h3>Staying Warm on a Freezing Day</h3>
     <div class="articleContent">
-        <img src="images/article_image.jpg" alt="hot chocolat, cangle and matches on a window sill">
+        <img src="images/article_image.jpg" alt="hot chocolate, cangle and matches on a window sill">
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi quis. Dolor sit amet consectetur adipiscing elit pellentesque. Pellentesque eu tincidunt tortor aliquam nulla. Enim neque volutpat ac tincidunt vitae semper. Placerat duis ultricies lacus sed. Pellentesque pulvinar pellentesque habitant morbi tristique senectus. Urna duis convallis convallis tellus id interdum. Diam in arcu cursus euismod quis. Integer quis auctor elit sed. Pellentesque habitant morbi tristique senectus et netus et. Massa tincidunt nunc pulvinar sapien et ligula. Convallis posuere morbi leo urna molestie. Vitae justo eget magna fermentum.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi quis. Dolor sit amet consectetur adipiscing elit pellentesque. </p>
+        <p><a href="#">Read more...</a></p>
 
-            Facilisis volutpat est velit egestas dui id ornare arcu odio. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Arcu non odio euismod lacinia at quis risus. Vulputate odio ut enim blandit. Tortor aliquam nulla facilisi cras fermentum. Proin fermentum leo vel orci. Potenti nullam ac tortor vitae purus faucibus ornare. Lacinia at quis risus sed vulputate odio ut enim. Pretium lectus quam id leo in vitae turpis. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt.</p>
+    </div>    
+</article>
+<article class="mainPageArticle, clearfix2">
+    <h3>Outdoor Activities for Winter Days</h3>
+    <div class="articleContent">
+        <img src="images/winteroutdoor.jpg" alt="family playing in snow">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi quis. Dolor sit amet consectetur adipiscing elit pellentesque. </p>
+        <p><a href="#">Read more...</a></p>
+    </div>    
+</article>
+<article class="mainPageArticle, clearfix2">
+    <h3>Boosting Your Immune System for the Flue Season</h3>
+    <div class="articleContent">
+        <img src="images/boostingimmunity.jpg" alt="woman cutting fruit">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi quis. Dolor sit amet consectetur adipiscing elit pellentesque. </p>
+        <p><a href="#">Read more...</a></p>
     </div>    
 </article>
 
 
 <!-- Contact -->
-<h2>Contact</h2>
+<h2 class="heading">Contact</h2>
 <div class="contact">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.2157501503643!2d14.549980115772836!3d50.1383956176815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bedaa038df597%3A0x1a16c33ca8f3078e!2sStuden%C3%A1%2C%20197%2000%20Praha%2019!5e0!3m2!1sen!2scz!4v1581711571236!5m2!1sen!2scz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     <div class="contactinfo">
@@ -196,6 +164,8 @@
   }
 });
             </script>
+
+    <script src="js/towns.js"></script>
 
 </body>
 </html>

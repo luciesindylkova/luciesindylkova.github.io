@@ -1,0 +1,79 @@
+/*------- Nová Platba -----------*/
+body {
+    background: linear-gradient(135deg, rgba(0,17,128,1) 0%, rgba(142,4,136,1) 100%);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+main {
+    margin-bottom: 40px;
+}
+main div.addpayment {
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 20%;
+    text-align: center;
+}
+
+main div.addpayment button {
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+    color: #001180;
+    font-size: 4rem;
+}
+
+form {
+    text-align: center;
+  
+}
+
+div.hide {
+    displaY: none;
+}
+
+ div.formdiv {
+     margin-left:20px;
+     margin-right: 20px;
+     max-width: 100%;
+ }
+
+form input {
+    margin-left: auto;
+    margin-left: auto;
+}
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
+    
+}
+
+form label.top input, form label.top select, form label.top textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 90%;
+    max-width: 100%;
+    
+    margin: 10px; 
+}
+
+form label.sbs {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: white;
+    color: #001180;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 40px;
+}
