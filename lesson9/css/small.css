@@ -405,6 +405,7 @@ form label.top input:required:valid {
 /*----------- Contact --------------*/
 main .contact {
     padding-bottom: 20px;
+    text-align: center;
 }
 
 main .contact p{
@@ -419,18 +420,21 @@ main .contact h3 {
     font-style: normal;
 }
 
-.map {
+main div.contact iframe {
     display: none;
 }
 
 .socialicons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .socialicons img {
-    max-width: 40px;
+    max-width: 60px;
     padding: 5px;
+  
 }
 
 

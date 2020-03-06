@@ -94,6 +94,13 @@ form label.sbs {
     padding: .4rem 0;
 }
 
+/*------- Contact --------*/
+.socialicons img {
+    max-width: 40px;
+    padding: 5px;
+}
+
+
 /*----------- FOOTER --------------*/
     
 } /* end of media query */

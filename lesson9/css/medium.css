@@ -109,17 +109,25 @@ main div.gallery {
 
 
 /*----------- Contact -------------*/
-.contact {
+main .contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: left;
 }
-.map {
+main div.contact iframe {
    display: block;
     width: 100%;  
 }
 
+
 .contactinfo {
     padding-left: 1rem;
+}
+
+.socialicons {
+
+    justify-content: start;
+
 }
 
 
