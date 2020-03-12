@@ -3,10 +3,25 @@ body {
     background: linear-gradient(135deg, rgba(0,17,128,1) 0%, rgba(142,4,136,1) 100%);
     color: white;
     font-family: 'Open Sans', sans-serif;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 main {
     margin-bottom: 40px;
 }
+
+button.button {
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(0,17,128,1) 0%, rgba(142,4,136,1) 100%);
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/*--------- Přidat platbu -----------*/
+
 main div.addpayment {
     margin-left: auto;
     margin-bottom: auto;
@@ -21,6 +36,51 @@ main div.addpayment button {
     background-color: white;
     color: #001180;
     font-size: 4rem;
+}
+
+/*--------- Dashboard -----------*/
+main div.dashboarddiv {
+    background-color: rgba(255, 255, 255, .8);
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+main div.dashboarddiv h2 {
+    color: rgba(0,17,128,1);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+}
+
+div.paymentplaceholder {
+    max-width: 100%;
+    margin:5%;
+    background-color: white;
+    
+    color: #555;
+    height: 44px;
+}
+
+/*--------- Nová platba -----------*/
+
+
+
+main a.back {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 10%;
+    margin-left: 10px;
+}
+
+main h1.newpayment {
+    text-align: center;
+    margin-top: 40px;
 }
 
 form {
@@ -76,4 +136,5 @@ form input.submitBtn {
     padding: 10px;
     border-radius: 10px;
     margin: 40px;
+    width: 100%;
 }

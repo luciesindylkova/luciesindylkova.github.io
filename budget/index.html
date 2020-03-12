@@ -25,41 +25,28 @@
         <main>
             <div class="addpayment">
                 
-            <button type="button" onclick="toggleMenu()" id="paymentBtn">&nbsp;+&nbsp;</button>
+            <a href="newpayment.html"><button type="button"  id="paymentBtn">&nbsp;+&nbsp;</button></a>
             <h1>Přidat platbu</h1>
             
             </div>
-    <div id="paymentForm" class="hide">
-        <div class="formdiv">
-            <form>
-            <label class="top">Název<input type="text" name="name"></label> 
-            <label class="top">Částka<input type="number" name="amount"></label> 
-            <div>Typ</div>
-            <label class="sbs">
-                <input type="radio" name="type" value="income">Příjem</label>
-            <label class="sbs">
-                <input type="radio" name="type" value="spending">Výdaj</label>
 
-            <label class="top">Datum<input type="date" name="date"></label> 
-            <label class="top">Kategorie<select name="subject">
-                <option>Vyber &#9662;</option>
-                <option value="vyplata">Výplata</option>
-                <option value="jidlo">Faktura</option>
-                <option value="alimenty">Alimenty</option>
-                <option value="jidlo">Jídlo</option>
-                <option value="ucty">Účty</option>
-                <option value="hypoteka">Hypotéka</option>
-                <option value="zabava">Zábava</option>
-                <option value="sporeni">Spoření</option>
-                <option value="adamek">Adámek</option>
-                <option value="obleceni">Oblečení</option>
-                <option value="ostatnie">Ostatní</option>
-                </select> 
-
-            <input type="submit" class="submitBtn" value="Přidat platbu">
-
-            </form>
-        </div>
+            <div class="dashboarddiv">
+                <h2>Poslední platby</h2>
+                <div class="paymentplaceholder">xxx</div>
+                <div class="paymentplaceholder">xxx</div>
+                <div class="paymentplaceholder">xxx</div>
+                <div class="paymentplaceholder">xxx</div>
+                <a href="#"><button class="button">Zobrazit vše</button></a>
+            </div>
+            <div class="dashboarddiv">
+                <h2>Kategorie</h2>
+                <div class="paymentplaceholder">xxx</div>
+                <div class="paymentplaceholder">xxx</div>
+                <div class="paymentplaceholder">xxx</div>
+                <div class="paymentplaceholder">xxx</div>
+                
+            </div>
+   
     </div>   
         </main>
     </body>
