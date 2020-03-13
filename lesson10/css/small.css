@@ -36,6 +36,10 @@ header {
     padding: .5rem 2%;
 }
 
+header a {
+    text-decoration: none;
+}
+
 #headerwrap {
     background-color: white;
 }
@@ -341,7 +345,7 @@ form fieldset {
 form legend {
     color: #010326;
     /*margin: 0 1rem;*/
-    padding: O .5rem; 
+    padding: 0 .5rem; 
     font-family: 'Playfair Display', serif;
     font-size: 1.5em;
 }
