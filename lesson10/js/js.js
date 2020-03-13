@@ -33,19 +33,8 @@ if(day == 5){
     announcement.style.display = 'none';
 }
 
-// ------- Windchill ------- //
 
-var t = parseFloat(document.querySelector('#temp').innerHTMLL)
-var s = parseFloat(document.querySelector('#speed').innerHTML)
-var wc = 35.74 + (0.6215*t) - 35.75*Math.pow(s,0.16) + (0.4275*t*Math.pow(s, 0.16));
-/*if (s>3 && t<=50) {*/
-    document.getElementById("windChill").innerHTML=wc.toFixed(1) + "&deg;F";
-/*}
-else {
-    document.getElementById("windChill").innerHTML="N/A";
-}
-*/
-// ------- Weather ------- //
+
 
 
 

@@ -8,9 +8,19 @@ fetch(apiURL)
     console.log(weatherInfo);
 
     document.getElementById('current').innerHTML=weatherInfo.weather[0].main;
-    document.getElementById('temp').innerHTML=weatherInfo.main.temp + "&deg;F";
-    document.getElementById('humidity').innerHTML=weatherInfo.main.humidity + "%";
+    document.getElementById('temp').innerHTML=weatherInfo.main.temp;
+    document.getElementById('humidity').innerHTML=weatherInfo.main.humidity;
     document.getElementById('speed').innerHTML=weatherInfo.wind.speed;
+
+    var t = weatherInfo.main.temp;
+    var s = weatherInfo.wind.speed;
+    var wc = 35.74 + (0.6215*t) - 35.75*Math.pow(s,0.16) + (0.4275*t*Math.pow(s, 0.16));
+        if (s>3 && t<=50) {
+            document.getElementById("windChill").innerHTML=wc.toFixed(1) + "&deg;F";
+        }
+        else {
+            document.getElementById("windChill").innerHTML="N/A";
+        }
 });
 
 const mydate = new Date();
@@ -59,3 +69,8 @@ fetch(api)
         }//end 1st if
     }//end for cycle
 }); //end fetch(api)
+
+// ------- Windchill ------- //
+
+
+
