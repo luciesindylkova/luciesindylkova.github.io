@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Weather site project fot CIT 230">
+<meta name="author" content="Lucie Sindylkova">
+
+<title>Preston | Weather Inn</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!--Favicon-->
+<link rel="shortcut icon" href="favicon.png">
+
+<!--Fonts-->
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+
+     
+</head>
+<body>
+
+    <section class="announcement">
+        <p>Saturday = Preston Pancakes in the Park!</p>
+        <p>9:00 a.m. Saturday at the city park pavilion.</p>
+    </section>   
+<!-- HEADER -->
+<div id="headerwrap">
+	<header class="clearfix">
+	<img src="images/logo.png" alt="logo">
+ <h1>the weather inn</h1>
+        <h2>Your no. 1 destination for everything weather</h2>
+    </header>
+</div>
+
+    
+    
+<!-- NAVIGATION  -->
+<div id="navwrap">
+    <nav class="clearfix">
+        <button id="menuButton" onclick="toggleMenu()" class="">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>  
+        </ul>
+    </nav>
+</div>
+
+    
+<!-- CONTENT -->
+    <main>
+        <h1>Preston</h1>
+
+<!-- Hero-->        
+      <div class="herodiv">
+          <div id="heroImage">
+              <picture class="photoA">
+                  <source media="(max-width: 200px)" srcset="images/cit230_image_200.jpg">
+                  <source media="(max-width: 500px)" srcset="images/cit230_image_500.jpg">
+                  <source media="(max-width: 800px)" srcset="images/cit230_image_800.jpg">
+                  <img src="images/cit230_image_1100.jpg" alt="nature">   
+              </picture>
+
+          <div class="weatherSummary"><h2>Weather Summary</h2>
+            <p>Currently: <span id="current"></span></p>
+            <p>High: <span><span id="temp"></span></span></p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+            <p>Humidity: <span id="humidity"><span></span></span></p>
+            <p>Wind Speed: <span><span id="speed"></span></span></p>
+          </div>
+      </div>
+    </div>  
+
+<!-- Forecast -->
+<h2>Forecast</h2>
+<div class="fore">
+    
+    <div class="forecast"></div>
+</div>
+
+<!-- Article -->
+<h2>Latest Article</h2>
+<article class="placeholder">
+    <h3>Best Winter Activities in Preston</h3>
+    <div class="articleContent">
+        <img src="images/article_image.jpg" alt="hot chocolat, cangle and matches on a window sill">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi quis. Dolor sit amet consectetur adipiscing elit pellentesque. Pellentesque eu tincidunt tortor aliquam nulla. Enim neque volutpat ac tincidunt vitae semper. Placerat duis ultricies lacus sed. Pellentesque pulvinar pellentesque habitant morbi tristique senectus. Urna duis convallis convallis tellus id interdum. Diam in arcu cursus euismod quis. Integer quis auctor elit sed. Pellentesque habitant morbi tristique senectus et netus et. Massa tincidunt nunc pulvinar sapien et ligula. Convallis posuere morbi leo urna molestie. Vitae justo eget magna fermentum.
+
+            Facilisis volutpat est velit egestas dui id ornare arcu odio. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Arcu non odio euismod lacinia at quis risus. Vulputate odio ut enim blandit. Tortor aliquam nulla facilisi cras fermentum. Proin fermentum leo vel orci. Potenti nullam ac tortor vitae purus faucibus ornare. Lacinia at quis risus sed vulputate odio ut enim. Pretium lectus quam id leo in vitae turpis. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt.</p>
+    </div>    
+</article>
+
+
+<!-- Contact -->
+<h2>Contact</h2>
+<div class="contact">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.2157501503643!2d14.549980115772836!3d50.1383956176815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bedaa038df597%3A0x1a16c33ca8f3078e!2sStuden%C3%A1%2C%20197%2000%20Praha%2019!5e0!3m2!1sen!2scz!4v1581711571236!5m2!1sen!2scz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <div class="contactinfo">
+        <h3>Address:</h3>
+        <p>The Weather Inn<br/>
+        Studená 790<br/>
+        Prague 9</p>
+    
+        <h3>Phone:</h3>
+        <p>800-500-200</p>
+    
+        <h3>Email:</h3>
+        <p>info@weatherinn.com</p>
+        <div class="socialicons">
+            <img src="images/icon_facebook.png" alt="facebook icon">
+            <img src="images/icon_instagram.png" alt="instagram icon">
+            <img src="images/icon_twitter.png" alt="twitter icon">
+            <img src="images/icon_youtube.png" alt="youtube icon">
+        </div>
+    </div>
+
+    
+</div>  
+
+
+        
+
+    </main>
+    
+<!-- FOOTER -->  
+<div id="footerwrap">
+    <footer>
+        &copy; 2020 &bull; Lucie Šindýlková &bull; Today is: <span id="today"></span>
+    </footer>
+
+</div> 
+
+    <script src="js/js.js"></script>
+    <script src="js/preston.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({
+  google: {
+    families: [
+       'Playfair Display'
+    ]
+  }
+});
+            </script>
+
+</body>
+</html>
