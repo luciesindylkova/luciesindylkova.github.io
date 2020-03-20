@@ -26,12 +26,7 @@ function toggleMenu() {
 
 let day = date.getDay();
 
-const announcement = document.querySelector('.announcement');
-if(day == 5){
-    announcement.style.display = 'block';
-} else {
-    announcement.style.display = 'none';
-}
+
 
 
 

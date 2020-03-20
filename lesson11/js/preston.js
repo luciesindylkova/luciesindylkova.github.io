@@ -71,7 +71,4 @@ fetch(api)
     }//end for cycle
 }); //end fetch(api)
 
-// ------- Windchill ------- //
-
-
 
