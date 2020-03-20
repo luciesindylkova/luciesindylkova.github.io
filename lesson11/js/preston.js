@@ -59,7 +59,7 @@ fetch(api)
             let myDay = document.createElement('div');
             myDay.setAttribute('class', 'weekdays');
             myDay.appendChild(dayName).setAttribute('class', 'dayName');
-            myDay.appendChild(myIcon);
+            myDay.appendChild(myIcon).setAttribute('alt', 'weather icon');
             myDay.appendChild(myTemp);
             
             let myForecast = document.querySelector('.forecast');
