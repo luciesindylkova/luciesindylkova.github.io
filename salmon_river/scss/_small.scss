@@ -7,7 +7,7 @@ div.headerwrap {
 
 div.logowrap {
     width: 50%;
-    background-color: red;
+
 }
 
 
@@ -57,6 +57,25 @@ nav ul {
 nav ul.hide {
     display: none;
 }
+
+/* ------- Hero Image -------*/
+main div.heroimg img {
+    max-width: 100%;
+}
+
+main div.parallaximg {
+    /* The image used */
+    background-image: url("/salmon_river/images/hero.jpg");
+  
+    /* Set a specific height */
+    height: 200px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 /* ------- Clearfix ------- */
 .clearfix:after {
