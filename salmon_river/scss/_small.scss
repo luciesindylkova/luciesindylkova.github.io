@@ -77,6 +77,12 @@ main div.parallaximg {
     background-size: cover;
   }
 
+/* ------- Main -------*/
+main h2 {
+    text-align: center;
+    font-family: $headingFont;
+}
+
 /* ------- Clearfix ------- */
 .clearfix:after {
     content: "";
