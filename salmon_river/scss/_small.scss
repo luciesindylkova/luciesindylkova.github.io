@@ -1,0 +1,66 @@
+/* ------- Header -------*/
+div.headerwrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+div.logowrap {
+    width: 50%;
+    background-color: red;
+}
+
+
+
+/* ------- Navigation -------*/
+div.buttonwrap {
+    width: 50%;
+}
+
+div.headerwrap button {
+    background: none;
+    border: none;
+    color: $bodyColor;
+    font-size: 44px;
+    font-weight: bold;
+    width: 100%;
+    text-align: right;
+    padding: 3%;
+}
+
+nav ul {
+    list-style-type: none;
+    font-family: $navFont;
+    padding: 0;
+    margin:0;
+
+    li {
+        background-color: $bodyColor;
+        a {
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $navColor;
+            padding: 1rem;
+        } // end a
+        a.active {
+            background-color: $accentColor;
+            color: $bodyColor;
+            font-weight: bold;
+        }
+    } //end li
+} // end nav ul
+
+
+/* ------- Navigation Toggle -------*/
+nav ul.hide {
+    display: none;
+}
+
+/* ------- Clearfix ------- */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
