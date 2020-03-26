@@ -7,17 +7,31 @@ div.headerwrap {
     display: flex;
     flex-direction: row;
     width: 100%;
+    padding: .5rem 0;
 }
 
 div.logowrap {
-    width: 50%;
-
+    width: 70%;
 }
 
+.logowrap {
+        font-size: 1.7rem;
+        font-family: $headingFont;
+        vertical-align: top;
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    img {
+        max-height: 61.5px;
+        float: left;
+        margin-right: 0.5rem;
+    }
+}
 
 /* ------- Navigation -------*/
 div.buttonwrap {
-    width: 50%;
+    width: 30%;
 }
 
 div.headerwrap button {
@@ -130,6 +144,42 @@ main a.button2 {
     background-color: $accentColor;
     color: $bodyColor;
     font-weight: bold;
+}
+
+/* ------- Footer ------- */
+footer {
+    padding: 3%;
+    background-color: $bodyColor;
+    color: $navColor;
+    h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    a {
+        color: $accentColor;
+        text-decoration: none;
+    }
+
+    .footerLinks {
+        text-align: center;
+    }
+    .footerLinks a {
+        display: block;
+ 
+    }
+
+    .footerLogo {
+        text-align: center;
+        padding: 1rem;
+        img {
+        max-height: 100px;
+        }
+    }
+    
+    .credits {
+        text-align: center;
+    }
 }
 
 /* ------- Clearfix ------- */

@@ -396,14 +396,27 @@ body {
 div.headerwrap {
   display: flex;
   flex-direction: row;
-  width: 100%; }
+  width: 100%;
+  padding: .5rem 0; }
 
 div.logowrap {
-  width: 50%; }
+  width: 70%; }
+
+.logowrap {
+  font-size: 1.7rem;
+  font-family: "Merriweather", serif;
+  vertical-align: top; }
+  .logowrap p {
+    padding: 0;
+    margin: 0; }
+  .logowrap img {
+    max-height: 61.5px;
+    float: left;
+    margin-right: 0.5rem; }
 
 /* ------- Navigation -------*/
 div.buttonwrap {
-  width: 50%; }
+  width: 30%; }
 
 div.headerwrap button {
   background: none;
@@ -497,15 +510,38 @@ main a.button2 {
   color: #393e41;
   font-weight: bold; }
 
+/* ------- Footer ------- */
+footer {
+  padding: 3%;
+  background-color: #393e41;
+  color: #e7e5df; }
+  footer h2 {
+    text-align: center;
+    font-size: 1.5rem; }
+  footer a {
+    color: #e7bb41;
+    text-decoration: none; }
+  footer .footerLinks {
+    text-align: center; }
+  footer .footerLinks a {
+    display: block; }
+  footer .footerLogo {
+    text-align: center;
+    padding: 1rem; }
+    footer .footerLogo img {
+      max-height: 100px; }
+  footer .credits {
+    text-align: center; }
+
 /* ------- Clearfix ------- */
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
 
-/* end of media query */
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 560px) {
   body {
-    max-width: 900px;
+    max-width: 960px;
     margin: 0 auto; } }
+/* end of media query */
 /* end of media query */
