@@ -66,9 +66,23 @@ main div.heroimg img {
     max-width: 100%;
 }
 
-main div.parallaximg {
+main div.parallaximg1 {
     /* The image used */
-    background-image: url("/salmon_river/images/hero.jpg");
+    background-image: url("/salmon_river/images/image1.jpg");
+  
+    /* Set a specific height */
+    height: 200px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main div.parallaximg2 {
+    /* The image used */
+    background-image: url("/salmon_river/images/image2.jpg");
   
     /* Set a specific height */
     height: 200px;
@@ -88,6 +102,34 @@ main h2 {
 
 main p {
     margin: $mainMargin;
+}
+
+main figure {
+    text-align: center;
+}
+
+main a.button1 {
+    display: block;
+    padding: 15px;
+    width: 50%;
+    margin: .5rem auto;
+    text-decoration: none;
+    text-align: center;
+    background-color: $bodyColor;
+    color: $navColor;
+    font-weight: bold;
+}
+
+main a.button2 {
+    display: block;
+    padding: 15px;
+    width: 50%;
+    margin: .5rem auto;
+    text-decoration: none;
+    text-align: center;
+    background-color: $accentColor;
+    color: $bodyColor;
+    font-weight: bold;
 }
 
 /* ------- Clearfix ------- */
