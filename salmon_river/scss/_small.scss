@@ -27,6 +27,10 @@ div.logowrap {
         float: left;
         margin-right: 0.5rem;
     }
+    a {
+        text-decoration: none;
+        color: $bodyColor;
+    }
 }
 
 /* ------- Navigation -------*/
@@ -109,9 +113,12 @@ main div.parallaximg1 {
   }
 
 /* ------- Main -------*/
-main h2 {
+main {
+    margin-bottom: 40px;
+    h2 {
     text-align: center;
     font-family: $headingFont;
+    }
 }
 
 main p {
@@ -120,6 +127,11 @@ main p {
 
 main figure {
     text-align: center;
+    figcaption {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
 }
 
 main a.button1 {
@@ -144,6 +156,14 @@ main a.button2 {
     background-color: $accentColor;
     color: $bodyColor;
     font-weight: bold;
+}
+
+/* ------- Weather ------- */
+.weatherSummary {
+    text-align: center;
+    span {
+        font-weight: bold;
+    }
 }
 
 /* ------- Footer ------- */
@@ -179,6 +199,21 @@ footer {
     
     .credits {
         text-align: center;
+    }
+
+    .socialIcons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        margin-top: 20px;
+    }
+
+    .socialIconPlaceholder {
+        width: 50px;
+        height: 50px;
+        background-color: $accentColor;
+        border-radius: 50%;
+        margin: 5px;
     }
 }
 

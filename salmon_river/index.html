@@ -22,7 +22,7 @@
         <header>
             <!-- Logo -->
             <div class="headerwrap">
-                <div class="logowrap"><img src="images/logo_dark.png"><p>Salmon River Adventures</p></div>
+                <div class="logowrap"><a href="index.html"><img src="images/logo_dark.png"><div class="verticalCenter"><p>Salmon River Adventures</p></div></a></div>
                 <div class="buttonwrap">
                     <button id="menuButton" onclick="toggleMenu()" class="">&#9776;</button>
                 </div>
@@ -48,7 +48,6 @@
 
             <!-- Section 1: Activities -->
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed lorem porttitor, malesuada nisl quis, mollis eros. Morbi volutpat magna sollicitudin lacus vestibulum, id fringilla ex vehicula. Vestibulum eu diam quis diam semper rhoncus non sed libero. In bibendum lacus est, a lobortis eros vestibulum ac. Vestibulum blandit a libero vitae mattis.</p>
              <div class="activitiesWrap">
                 <figure>
                     <img src="images/rafting.png" alt="Rafting">
@@ -63,10 +62,10 @@
                     <figcaption>Kayaking</figcaption>
                 </figure>
             </div>   
-
-            <a class="button1" href="guides.html">See Trips</a>
-            <a class="button2" href="reservations.html">Book a Trip!</a>
-                
+            <div class="buttonsWrap">
+                <a class="button1" href="guides.html">See Trips</a>
+                <a class="button2" href="reservations.html">Book a Trip!</a>
+            </div>   
             </div>
 
             <!-- Image 1 -->
@@ -77,19 +76,28 @@
             <!-- Section 2: Our Team -->
             <div>
                 <h2>Our Team</h2>
-                <p>Our team of experienced guides will keep you safe and help you enjoy the most thrilling ride of your life!</p>
-                <a class="button1" href="guides.html">Meet Our Guides</a>
-                <a class="button2" href="reservations.html">Book a Trip!</a>
+                <p>Our team of experienced guides will keep you safe and help you enjoy the most thrilling ride of your life! All of our guides have appropriate certifications and plenty of experience so that you can ejoy your trip. </p>
+                <div class="buttonsWrap">
+                    <a class="button1" href="guides.html">Meet Our Guides</a>
+                    <a class="button2" href="reservations.html">Book a Trip!</a>
+                </div>
             </div>
             <!-- Image 2 -->
             <div class="parallaximg2">
 
             </div>
             <!-- Section 3: Forecast -->
-                <h2>Forecast</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed lorem porttitor, malesuada nisl quis, mollis eros. Morbi volutpat magna sollicitudin lacus vestibulum, id fringilla ex vehicula. Vestibulum eu diam quis diam semper rhoncus non sed libero. In bibendum lacus est, a lobortis eros vestibulum ac. Vestibulum blandit a libero vitae mattis.</p>
-                <a class="button1" href="guides.html">See Trips</a>
-                <a class="button2" href="reservations.html">Book a Trip!</a>
+                <h2>Current Weather</h2>
+                <div class="weatherSummary">
+                    <p>Currently: <span id="current"></span></p>
+                    <p>Temperature: <span><span id="temp"></span></span></p>
+                    <p>Humidity: <span id="humidity"><span></span></span></p>
+                    <p>Wind Speed: <span><span id="speed"></span></span></p>
+                </div>
+                <div class="buttonsWrap">
+                    <a class="button1" href="guides.html">See Trips</a>
+                    <a class="button2" href="reservations.html">Book a Trip!</a>
+                </div>
             <div>
                 
             </div>
@@ -97,24 +105,36 @@
         </main>
 
         <footer>
-            <h2>Contact</h2>
-            <img src="#" alt="mail"><a href="mailto:info@salmonriveradventures.com">info@salmonriveradventures.com</a><br>
-            <img src="#" alt="phone"><span>(800) 893-9144</span><br>
-            <img src="#" alt="address"><span>811 Elfers Rd</span><br>
-            <span>Riggins, ID 83549</span>
-
-            <h2>Important Links</h2>
-            <div class="footerLinks">
-                <a href="#">Trips</a><br>
-                <a href="#">Guides</a><br>
-                <a href="#">Reservation</a><br>
-                <a href="#">Contact</a>
+            <div class="mediumWrap">
+                <div>
+                    <h2>Contact</h2>
+                    <img src="#" alt="mail"><a href="mailto:info@salmonriveradventures.com">info@salmonriveradventures.com</a><br>
+                    <img src="#" alt="phone"><span>(800) 893-9144</span><br>
+                    <img src="#" alt="address"><span>811 Elfers Rd</span><br>
+                    <span>Riggins, ID 83549</span>
+                </div>
+                <div>
+                    <h2>Important Links</h2>
+                    <div class="footerLinks">
+                        <a href="#">Trips</a><br>
+                        <a href="#">Guides</a><br>
+                        <a href="#">Reservation</a><br>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
             </div>
+            <div class="mediumWrap">
+                <div class="socialIcons">
+                    <div class="socialIconPlaceholder"></div>
+                    <div class="socialIconPlaceholder"></div>
+                    <div class="socialIconPlaceholder"></div>
+                    <div class="socialIconPlaceholder"></div>
+                </div>
 
-            <div class="footerLogo">
-               <a href="index.html"><img src="images/logo_light.png"></a>
+                <div class="footerLogo">
+                <a href="index.html"><img src="images/logo_light.png"></a>
+                </div>
             </div>
-
             <div class="credits">
                 &copy; 2020 &bull; Lucie Šindýlková &bull; BYU-Idaho
             </div>
