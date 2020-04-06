@@ -30,6 +30,7 @@ body {
 .buttonsWrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
     a.button1 {
         margin-right: 10px;
     }

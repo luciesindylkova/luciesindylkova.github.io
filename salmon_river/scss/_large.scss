@@ -3,3 +3,69 @@
     height: 70px;
     
 }
+
+
+/* NAVIGATION */
+#menuButton, .buttonwrap {
+    display: none;
+}
+
+nav ul {
+    margin-left: 2%;
+    
+}
+
+nav ul.hide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr;
+    justify-items: center;
+  
+}
+
+
+nav ul li {
+    text-align: center;
+    background-color: transparent;
+}
+
+nav ul li a
+    {padding: .6rem 1rem;
+        margin-top: 1.3rem;
+    text-align: left;
+   border: none;
+   font-weight: bold;
+   font-size: 0.75rem;
+   color: $navColor;
+
+}
+
+nav ul li a:hover {
+    border-bottom: 5px solid $accentColor;
+}
+
+li a.active {
+    background-color: transparent!important;
+    border-bottom: 5px solid $accentColor;
+    color: $navColor!important;
+}
+
+main div.heroimg {
+    position: relative;
+}
+
+header {
+    max-width: 960px;
+    position: absolute;
+    z-index: 2;
+    p {
+        color: $navColor;
+    }
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .verticalCenter, .logowrap {
+        width: 100%;
+    }
+}
+
+
