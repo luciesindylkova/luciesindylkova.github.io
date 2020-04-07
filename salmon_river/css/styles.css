@@ -409,10 +409,12 @@ div.logowrap {
   .logowrap p {
     padding: 0;
     margin: 0; }
-  .logowrap img {
+  .logowrap picture {
     max-height: 61.5px;
     float: left;
     margin-right: 0.5rem; }
+    .logowrap picture img {
+      max-height: 61.5px; }
   .logowrap a {
     text-decoration: none;
     color: #393e41; }
@@ -525,6 +527,41 @@ main a.button2 {
   .weatherSummary span {
     font-weight: bold; }
 
+/* ------- Contact Form ------- */
+iframe {
+  max-width: 100%; }
+
+.contactWrap {
+  padding: 0 1rem; }
+
+form {
+  padding: 20px 0px; }
+  form legend {
+    font-family: "Merriweather", serif;
+    font-size: 1.3rem;
+    padding: 0px 5px; }
+  form label {
+    margin-top: 10px; }
+  form input {
+    display: block;
+    height: 44px;
+    width: 100%; }
+  form textarea {
+    display: block;
+    width: 100%; }
+  form .submitBtn {
+    display: block;
+    padding: 15px;
+    width: 50%;
+    margin: .5rem 0;
+    text-decoration: none;
+    text-align: center;
+    background-color: #e7bb41;
+    color: #393e41;
+    font-weight: bold;
+    border: none;
+    width: 100%; }
+
 /* ------- Footer ------- */
 footer {
   padding: 3%;
@@ -599,7 +636,13 @@ footer {
 
   .mediumWrap {
     display: grid;
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr; }
+
+  div.contactWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    div.contactWrap .contactDiv {
+      padding: 0px 20px; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   .socialIconPlaceholder {
@@ -651,5 +694,18 @@ footer {
     header p {
       color: #e7e5df; }
     header .verticalCenter, header .logowrap {
-      width: 100%; } }
+      width: 100%; }
+
+  form input:not(.submitBtn) {
+    height: 20px; }
+  form .submitBtn {
+    display: block;
+    padding: 15px;
+    width: 50%;
+    margin: .5rem auto;
+    text-decoration: none;
+    text-align: center;
+    background-color: #e7bb41;
+    color: #393e41;
+    font-weight: bold; } }
 /* end of media query */

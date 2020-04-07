@@ -43,3 +43,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+// Contacts
+div.contactWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .contactDiv {
+        padding: 0px 20px;
+    }
+}

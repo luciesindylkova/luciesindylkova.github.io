@@ -68,4 +68,21 @@ header {
     }
 }
 
+// COntacts
 
+form {
+    input:not(.submitBtn) {
+        height: 20px;
+    }
+    .submitBtn {
+        display: block;
+        padding: 15px;
+        width: 50%;
+        margin: .5rem auto;
+        text-decoration: none;
+        text-align: center;
+        background-color: $accentColor;
+        color: $bodyColor;
+        font-weight: bold;
+    }
+}

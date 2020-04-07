@@ -22,10 +22,13 @@ div.logowrap {
         padding: 0;
         margin: 0;
     }
-    img {
+    picture {
         max-height: 61.5px;
         float: left;
         margin-right: 0.5rem;
+        img {
+            max-height: 61.5px;
+        }
     }
     a {
         text-decoration: none;
@@ -164,6 +167,50 @@ main a.button2 {
     span {
         font-weight: bold;
     }
+}
+
+/* ------- Contact Form ------- */
+iframe {
+    max-width: 100%;
+}
+
+.contactWrap {
+    padding: 0 1rem;
+}
+
+form {
+    padding: 20px 0px;
+    legend {
+        font-family: $headingFont;
+        font-size: 1.3rem;
+        padding: 0px 5px;
+    }
+    label {
+        margin-top: 10px;
+    }
+    input {
+        display: block;
+        height: 44px;
+        width: 100%;
+    }
+    textarea {
+        display: block;
+        width: 100%;
+    }
+    .submitBtn {
+        display: block;
+        padding: 15px;
+        width: 50%;
+        margin: .5rem 0;
+        text-decoration: none;
+        text-align: center;
+        background-color: $accentColor;
+        color: $bodyColor;
+        font-weight: bold;
+        border: none;
+        width: 100%;
+    }
+
 }
 
 /* ------- Footer ------- */
