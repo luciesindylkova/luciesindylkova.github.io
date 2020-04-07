@@ -30,3 +30,54 @@ fetch(apiURL)
     var s = weatherInfo.wind.speed;
 
 });
+
+// Guides
+
+const requestURL = 'https://luciesindylkova.github.io/salmon_river/js/guides.json';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const towns = jsonObject['guides'];
+    for (let i = 0; i < guides.length; i++ ) {
+
+        let card = document.createElement('section');
+        let name = document.createElement('h3');
+        let experience = document.createElement('p');
+        let email = document.createElement('p');
+        let bio = document.createElement('p');
+        let image = document.createElement('img');
+        let div = document.createElement('div');
+            if (i === 1) {
+                div.classList.add("floatLeft");
+            }
+            else {
+              div.classList.add("floatRight");
+            }
+
+        name.textContent = guides[i].name;
+        experience.textContent = 'Year Founded: ' + guides[i].years;
+        email.textContent = 'Annual Rainfall: ' + guides[i].email;
+        bio.textContent = 'Bio: ' + guides[i].biography;
+
+        image.setAttribute('src', 'images/' + guides[i].photo);
+        image.setAttribute('alt', guides[i].name);
+
+        
+        div.appendChild(name);
+        div.appendChild(experience);
+        div.appendChild(email);
+        div.appendChild(bio);
+        
+        card.appendChild(div);
+        card.appendChild(image);
+        
+
+        document.querySelector('div.guidesDiv').appendChild(card);
+      
+    }
+  }
+    );
