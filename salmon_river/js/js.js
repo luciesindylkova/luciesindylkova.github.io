@@ -43,7 +43,7 @@ fetch(requestURL)
         console.table(jsonObject); // temporary checking for valid response and data parsing
         const guides = jsonObject['guides'];
         console.log(guides);
-        
+
     for (let i = 0; i < guides.length; i++ ) {
 
         let card = document.createElement('section');
@@ -74,8 +74,9 @@ fetch(requestURL)
         div.appendChild(email);
         div.appendChild(bio);
         
-        card.appendChild(div);
         card.appendChild(image);
+        card.appendChild(div);
+
         
 
         document.querySelector('div.guidesDiv').appendChild(card);
