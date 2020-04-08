@@ -562,6 +562,76 @@ form {
     border: none;
     width: 100%; }
 
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin: 5px; }
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d; }
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); }
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; }
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: #393e41;
+  font-size: 1.5em;
+  font-weight: bold; }
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: black;
+  border: #f2f2f2 solid 2px;
+  transform: rotateY(180deg); }
+
+p.flip-card-text {
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  margin: auto; }
+
+.card_image {
+  width: 300px;
+  height: 300px; }
+
+/* text on top of image */
+.centered {
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: #e7bb41;
+  margin: 0;
+  padding: 1rem 0; }
+
+.content_cards {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+
 /* ------- Footer ------- */
 footer {
   padding: 3%;
