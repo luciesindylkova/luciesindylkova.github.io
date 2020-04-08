@@ -33,13 +33,17 @@ fetch(apiURL)
 
 // Guides
 
-const requestURL = 'https://luciesindylkova.github.io/salmon_river/js/guides.json';
+const requestURL = 'https://luciesindylkova.github.io/json/guides.json';
 
 fetch(requestURL)
-    .then((response) => response.json())
-    .then((jsonProfiles) => {
-    console.log(jsonProfiles);  // temporary checking for valid response and data parsing
-    const guides = jsonProfiles.guides;
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        console.table(jsonObject); // temporary checking for valid response and data parsing
+        const guides = jsonObject['guides'];
+        console.log(guides);
+        
     for (let i = 0; i < guides.length; i++ ) {
 
         let card = document.createElement('section');
