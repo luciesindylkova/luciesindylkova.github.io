@@ -36,12 +36,10 @@ fetch(apiURL)
 const requestURL = 'https://luciesindylkova.github.io/salmon_river/js/guides.json';
 
 fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const towns = jsonObject['guides'];
+    .then((response) => response.json())
+    .then((jsonProfiles) => {
+    console.log(jsonProfiles);  // temporary checking for valid response and data parsing
+    const guides = jsonProfiles.guides;
     for (let i = 0; i < guides.length; i++ ) {
 
         let card = document.createElement('section');
@@ -59,8 +57,8 @@ fetch(requestURL)
             }
 
         name.textContent = guides[i].name;
-        experience.textContent = 'Year Founded: ' + guides[i].years;
-        email.textContent = 'Annual Rainfall: ' + guides[i].email;
+        experience.textContent = 'Year of experience: ' + guides[i].years;
+        email.textContent = 'Email: ' + guides[i].email;
         bio.textContent = 'Bio: ' + guides[i].biography;
 
         image.setAttribute('src', 'images/' + guides[i].photo);
