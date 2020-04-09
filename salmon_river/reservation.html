@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!--Favicon-->
-        <link rel="shortcut icon" href="#">
+        <link rel="shortcut icon" href="favicon.ico">
 
 <!-- STYLE SHEETS -->
         <link href="css/styles.css" rel="stylesheet">
@@ -57,7 +57,78 @@
                 <img src="images/hero.jpg">
             </div>
 
+            <table>
+                <thead>
+                    <tr>
+                    <td colspan="4">Our Selection</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Length</th>
+                        <th>Skill Level</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Party Boat</td>
+                        <td>2 days</td>
+                        <td>Beginner-Advanced</td>
+                        <td>&#36;80/person</td>
+                    </tr>
+                    <tr>
+                        <td>Solo Rush</td>
+                        <td>1 day</td>
+                        <td>Intermediate-Advanced</td>
+                        <td>&#36;120/person</td>
+                    </tr>
+                    <tr>
+                        <td>Two Peas in a Pot</td>
+                        <td>1 day</td>
+                        <td>Beginner</td>
+                        <td>&#36;200/couple</td>
+                    </tr>
 
+                </tbody>
+                
+            </table>
+
+            <form class="bookTrip" method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Book a Trip</legend>
+                    <div>
+                        <label> Name* <input type="text" name="fname" required minlength="5"></label><br/>
+                        <label> Email* <input type="email" name="email" required placeholder="someone@gmail.com"></label><br/>  
+                        <label> Phone <input type="tel" name="phone"></label><br/>   
+                    </div>
+
+                    <div>
+                        <label class="top">Trip* <select name="trip" required>
+                            <option>Please select your preference</option>
+                            <option value="preston">Party Boat</option>
+                            <option value="sodaSprings">Solo Rush</option>
+                            <option value="fishHaven">Two Peas in a Canoe</option>
+                            <option value="fishHaven">Custom Trip (we will contact you for more details)</option>
+                            </select>
+                        </label><br/>
+                        <label> Number of People* <input type="number" name="email" required></label><br/>  
+                        <label class="top">Experience Level* <select name="trip" required>
+                            <option>Select experience</option>
+                            <option value="preston">Beginner</option>
+                            <option value="sodaSprings">Intermediate</option>
+                            <option value="fishHaven">Advanced</option>
+                            <option value="fishHaven">Pro</option>
+                            </select>
+                        </label><br/>   
+                    </div>
+                
+                <input type="submit" class="submitBtn" value="Book Now!">
+                </fieldset>
+
+               
+            </form>
+            <p class="center">Have a question about trips?</p>
+            <a class="button2" href="contact.html">Contact Us!</a>
 
         </main>
 
@@ -65,10 +136,10 @@
             <div class="mediumWrap">
                 <div>
                     <h2>Contact</h2>
-                    <img src="#" alt="mail"><a href="mailto:info@salmonriveradventures.com">info@salmonriveradventures.com</a><br>
-                    <img src="#" alt="phone"><span>(800) 893-9144</span><br>
-                    <img src="#" alt="address"><span>811 Elfers Rd</span><br>
-                    <span>Riggins, ID 83549</span>
+                    <img class="contactIcon" src="images/icon_mail.png" alt="mail"><a href="mailto:info@salmonriveradventures.com">info@salmonriveradventures.com</a><br>
+                    <img class="contactIcon" src="images/icon_phone.png" alt="phone"><span>(800) 893-9144</span><br>
+                    <img class="contactIcon" src="images/icon_address.png" alt="address"><span>811 Elfers Rd</span><br>
+                    <span class="addressPadding">Riggins, ID 83549</span>
                 </div>
                 <div>
                     <h2>Important Links</h2>
@@ -82,10 +153,10 @@
             </div>
             <div class="mediumWrap">
                 <div class="socialIcons">
-                    <div class="socialIconPlaceholder"></div>
-                    <div class="socialIconPlaceholder"></div>
-                    <div class="socialIconPlaceholder"></div>
-                    <div class="socialIconPlaceholder"></div>
+                    <a href="https://facebook.com" target="_blank"><img src="images/icon_fb.png" alt="facebook"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="images/icon_insta.png" alt="instagram"></a>
+                    <a href="http://web.whatsapp.com" target="_blank"><img src="images/icon_wa.png" alt="whatsapp"></a>
+                    <a href="https://youtube.com" target="_blank"><img src="images/icon_yt.png" alt="youtube"></a>                   
                 </div>
 
                 <div class="footerLogo">
@@ -97,7 +168,6 @@
             </div>
 
         </footer>
-
 
 <!-- Scripts -->
         <script src="js/js.js"></script>

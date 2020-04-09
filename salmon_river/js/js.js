@@ -49,6 +49,7 @@ fetch(requestURL)
         let card = document.createElement('section');
         let name = document.createElement('h3');
         let experience = document.createElement('p');
+        let certification = document.createElement('p');
         let email = document.createElement('p');
         let bio = document.createElement('p');
         let image = document.createElement('img');
@@ -61,9 +62,10 @@ fetch(requestURL)
             }
 
         name.textContent = guides[i].name;
-        experience.textContent = 'Year of experience: ' + guides[i].years;
+        experience.textContent = 'Years of experience: ' + guides[i].years;
         email.textContent = 'Email: ' + guides[i].email;
         bio.textContent = 'Bio: ' + guides[i].biography;
+        certification.textContent = 'Certification: ' + guides[i].certification;
 
         image.setAttribute('src', 'images/' + guides[i].photo);
         image.setAttribute('alt', guides[i].name);
@@ -71,9 +73,10 @@ fetch(requestURL)
         
         div.appendChild(name);
         div.appendChild(experience);
+        div.appendChild(certification);
         div.appendChild(email);
         div.appendChild(bio);
-        
+
         card.appendChild(image);
         card.appendChild(div);
 

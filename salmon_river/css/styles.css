@@ -527,6 +527,25 @@ main a.button2 {
   .weatherSummary span {
     font-weight: bold; }
 
+/* ------- Table ------- */
+table {
+  text-align: center;
+  margin: 1rem auto; }
+  table thead {
+    background-color: #e7bb41;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #393e41; }
+
+table, th, td {
+  border: 1px solid #d3d0cb;
+  border-collapse: collapse;
+  max-width: 100%; }
+
+th, td {
+  padding: 0.5rem; }
+
 /* ------- Contact Form ------- */
 iframe {
   max-width: 100%; }
@@ -535,6 +554,7 @@ iframe {
   padding: 0 1rem; }
 
 form {
+  margin: .5rem;
   padding: 20px 0px; }
   form legend {
     font-family: "Merriweather", serif;
@@ -542,7 +562,7 @@ form {
     padding: 0px 5px; }
   form label {
     margin-top: 10px; }
-  form input {
+  form input, form select {
     display: block;
     height: 44px;
     width: 100%; }
@@ -561,6 +581,19 @@ form {
     font-weight: bold;
     border: none;
     width: 100%; }
+
+main div.guidesDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 7px;
+  text-align: center;
+  margin: .5rem; }
+
+main div.guidesDiv section {
+  background-color: #e7e5df; }
+
+main div.guidesDiv section img {
+  max-width: 100%; }
 
 .flip-card {
   background-color: transparent;
@@ -632,6 +665,10 @@ p.flip-card-text {
   margin-top: 20px;
   margin-bottom: 40px; }
 
+p.center {
+  text-align: center;
+  margin: 1rem; }
+
 /* ------- Footer ------- */
 footer {
   padding: 3%;
@@ -665,6 +702,11 @@ footer {
     background-color: #e7bb41;
     border-radius: 50%;
     margin: 5px; }
+  footer .contactIcon {
+    width: 1rem;
+    padding-right: .3rem; }
+  footer .addressPadding {
+    padding-left: 1.3rem; }
 
 /* ------- Clearfix ------- */
 .clearfix:after {
@@ -712,7 +754,29 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr; }
     div.contactWrap .contactDiv {
-      padding: 0px 20px; } }
+      padding: 0px 20px; }
+
+  main div.guidesDiv {
+    grid-template-columns: 1fr;
+    text-align: left; }
+
+  main div.guidesDiv section {
+    display: flex;
+    flex-direction: row; }
+
+  main div.guidesDiv section img {
+    width: 50%; }
+
+  main div.guidesDiv section div.floatRight {
+    width: 50%;
+    padding: 2%; }
+
+  main div.guidesDiv section div.floatLeft {
+    width: 50%;
+    padding: 2%; }
+
+  main div.guidesDiv section:nth-child(odd) div.floatRight {
+    order: 2; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   .socialIconPlaceholder {
@@ -777,5 +841,9 @@ footer {
     text-align: center;
     background-color: #e7bb41;
     color: #393e41;
-    font-weight: bold; } }
+    font-weight: bold; }
+
+  form.bookTrip {
+    width: 50%;
+    margin: 0 auto; } }
 /* end of media query */

@@ -52,3 +52,34 @@ div.contactWrap {
         padding: 0px 20px;
     }
 }
+
+// Guides Cards
+main div.guidesDiv {
+    grid-template-columns: 1fr;
+    text-align: left;
+    }
+    
+    main div.guidesDiv section {
+        display: flex;
+        flex-direction: row;
+       
+    }
+    main div.guidesDiv section img {
+        width: 50%;
+    }
+    
+    
+    main div.guidesDiv section div.floatRight {
+        width: 50%;
+        padding:2%;
+    }
+    
+    main div.guidesDiv section div.floatLeft {
+        width: 50%;
+        padding:2%;
+    }
+    
+    
+    main div.guidesDiv section:nth-child(odd) div.floatRight{
+        order: 2;
+    }
